@@ -1,134 +1,220 @@
 /* Basic reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Google Font Import - you can choose fonts that are modern such as Poppins, Montserrat, or Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Page styling */
+body, input, select, button, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Page container */
+.container {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+
+
+/* Add this to your css/test.css file */
+
+/* Header and logo styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background: #fff; /* Adjust background color as needed */
+}
+
+.logo-container img {
+  height: 60px; /* Adjust size as needed */
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Adjust link color as needed */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #007bff; /* Adjust hover color as needed */
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+  nav ul {
+      display: none; /* Hide navigation on smaller screens, consider a toggle menu */
   }
-  
-  /* Page container */
+}
+
+/* Other existing styles */
+/* ... rest of your styles ... */
+
+
+
+
+/* Styling h2 heading */
+.container h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.container h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form field styling */
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Placeholder style */
+input::placeholder {
+  color: #aaa;
+}
+
+/* Button styling */
+button {
+  padding: 15px;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0052cc;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003d99;
+}
+
+
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
   .container {
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-top: 20px;
   }
-  
-  /* Styling h2 heading */
+
   .container h2 {
     font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #333;
-    text-align: center;
   }
-  
-  /* Form field styling */
-  label {
-    display: block;
-    margin: 15px 0 5px;
+}
+
+@media (max-width: 480px) {
+  .container h2 {
+    font-size: 1.2em;
   }
-  
-  input[type="text"],
-  input[type="tel"],
-  input[type="file"],
-  select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  /* Style the placeholders to appear like labels floating above the inputs */
-  input::placeholder {
-    color: #666;
-    font-style: italic;
-  }
-  
-  /* Button styling */
+
   button {
-    padding: 10px;
-    width: 100%;
-    margin-top: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
+    padding: 12px;
   }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Terms and conditions checkbox styling */
-  .terms {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .terms label {
-    display: inline-block;
-    margin-left: 8px;
-    font-size: 0.9em;
-  }
-  
-  /* Responsive design adjustments */
-  @media (max-width: 768px) {
-    .container {
-      width: auto;
-      padding: 10px;
-    }
-  
-    h2 {
-      font-size: 1.2em;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    h2 {
-      font-size: 1em;
-    }
-  
-    button {
-      padding: 8px;
-    }
-  }
-  
-
-
-
-
-
-
-
-  /* Mobile menu button */
-  .menu-toggle {
-    display: none; /* Hidden by default, shown only on mobile */
-    cursor: pointer;
-    font-size: 24px; /* Icon size */
-    color: #333; /* Icon color */
 }
 
-/* Show toggle button and hide navigation list on mobile */
-.menu-toggle {
-    display: block;
+
+/* Logo container centralized on mobile */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column; /* Stack logo and navigation */
+  }
+
+  .logo-container {
+      width: 100%; /* Full width */
+      margin-bottom: 20px; /* Space between logo and navigation */
+  }
+
+  .logo-container img {
+      display: block; /* Center logo image */
+      margin: 0 auto; /* Centering margin */
+  }
 }
 
-/* Hidden navigation menu */
-nav ul.collapsed {
-    display: block;
-    width: 100%; /* Full width */
+
+/* Terms and conditions checkbox styling */
+.terms {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 1.5;
 }
 
-nav ul.collapsed li {
-    padding: 10px 0; /* Padding for list items */
-    border-top: 1px solid #ddd; /* Borders for separation */
+.terms input[type="checkbox"] {
+  margin-right: 10px;
 }
 
-nav ul.collapsed li a {
-    width: 100%; /* Full width links */
-    display: block; /* Block level for full-width click area */
+.terms label {
+  font-weight: 400;
+}
+
+/* Birthday checkbox styling */
+input[type="birth_date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
 }
