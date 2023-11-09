@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Application</title>
+
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<link rel="shortcut icon" href="path-to-your-favicon.ico" type="image/x-icon"> <!-- Update the path to your favicon -->
+<link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Business Logo" /> <!-- Update the path to your logo -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Login</a></li>
+                    <li><a href="page3.html">Ajowa Live</a></li>
+                    <li><a href="page4.html">Contact Us</a></li>
+                    <!-- Add more navigation items here -->
+                </ul>
+            </nav>
+        </header>
+    <h1>Ajowa Inc</h1>
+    <h2>New Application Form - this is to start new Application</h2>
+    <form id="newApplicationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full legal name" required>
+        
+
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="Enter your telephone" required>
+        
+
+        <label for="legalStatus">Your Legal Status:</label>
+        <select id="legalStatus" name="legalStatus" required>
+            <option value="">Select your status</option>
+            <option value="bsc_student">BSc Student</option>
+            <option value="msc_student_tier4">MSc Student - Tier 4</option>
+            <option value="skilled_worker_tier2">Skilled Worker Tier2</option>
+            <option value="expert">Expert</option>
+            <option value="self_employed">Self Employed</option>
+        </select>
+
+        <label for="birth_date">Enter Your Birthday:</label>
+        <input type="date" id="birth_date" placeholder="Enter your birthday" required>
+
+        <label for="goal">Your Ajo Goal(s)?:</label>
+        <select id="goal" name="goal" required>
+            <option value="">Select your goal</option>
+            <option value="graduate_visa">Graduate Visa</option>
+            <option value="house_purchase">House Purchase</option>
+            <option value="car_purchase">Car Purchase</option>
+            <option value="others">Others</option>
+        </select>
+        
+
+        <label for="goal">Marital Status:</label>
+        <select id="marital_status" name="goal" required>
+            <option value="">I am in the UK</option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widowed">Widowed</option>
+        </select>
+        
+
+        <label for="dependants">Dependants:</label>
+        <select id="dependants" name="goal" required>
+            <option value=""> Do you have dependent(s)?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        
+
+        <label for="Address">Address:</label>
+        <select id="address" name="goal" required>
+            <option value=""> Are you party to your residence tenancy agreement?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="no">Currently Squatting</option>
+        </select>
+        
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Postcode required">
+        
+
+        <label for="work_job">Work/Job Title:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Job Title">
+        
+
+        <label for="income1">Do you currently have a source of income?:</label>
+        <select id="goal" name="goal" required>
+            <option value=""> Are you party to your residence tenancy agreement?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="no">Still Searching</option>
+        </select>
+        
+
+        <label for="income2"> Enter your net income per week:£</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Job Title">
+        
+        
+        
+        <form id="newApplicationForm" enctype="multipart/form-data">
+
+            <label for="identification">Valid Identification:</label>
+            <input type="file" id="identification" name="identification" required>
+            
+
+            <label for="contract">Wok/Job Contract:</label>
+            <input type="file" id="contract" name="contract" required>
+            
+
+            <label for="pool">Total Ajo Pool: </label>
+        <select id="pool" name="goal" required>
+            <option value="">How many people contribute?</option>
+            <option value="5">5 Persons</option>
+            <option value="7">7 Persons</option>
+            <option value="10">10 Persons</option>
+            <option value="15">15 Persons</option>
+            <option value="15">20 Persons</option>
+        </select>
+        
+
+        <label for="contribution">Contribution: </label>
+        <select id="contribution" name="pool" required>
+            <option value="">How many people contribute?</option>
+            <option value="20">£20</option>
+            <option value="50">£50</option>
+            <option value="70">£70</option>
+            <option value="100">£100</option>
+            <option value="300">£300</option>
+            <option value="500">£500</option>
+            <option value="1000">£1000</option>
+            <option value="2000">£2000</option>
+        </select>
+        
+
+        <label for="frequency">Frequency: </label>
+        <select id="frequency" name="frequency" required>
+            <option value="">Your payment cycle?</option>
+            <option value="5">Weekly</option>
+            <option value="biweekly">Twice Per Month</option>
+            <option value="monthly">Monthly</option>
+        </select>
+        
+
+        <label for="bank">Bank Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your bank name">
+        
+        
+        <label for="sort_code">Sort Code:</label>
+        <input type="text" id="name" name="name" placeholder="The branch sort code of your bank or building society">
+        
+
+        <label for="account_name">Account Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter the name(s) on the account">
+        
+
+        <div class="terms">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="terms.html">terms and conditions</a>.</label>
+        </div>
+        
+        <button type="submit" onclick="authorizeBank()">Authorize Bank</button>
+        <button type="button" onclick="cancelForm()">Cancel</button>
+        </form>
+
+        <!-- <button type="submit">Submit Application</button> -->
+        <br></br>
+    </form>
+</div>
+<!-- <script>
+    // Toggle mobile menu
+    document.getElementById('mobile-menu-toggle').onclick = function() {
+        var navList = document.getElementById('nav-list');
+        if (navList.classList.contains('collapsed')) {
+            navList.classList.remove('collapsed');
+        } else {
+            navList.classList.add('collapsed');
+        }
+    }; -->
+    </script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
