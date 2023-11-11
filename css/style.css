@@ -70,8 +70,44 @@ nav ul li a:hover {
   }
 }
 
-/* Other existing styles */
-/* ... rest of your styles ... */
+/* Add below your existing @media (max-width: 768px) query for nav ul */
+@media (max-width: 768px) {
+  .menu-icon {
+      display: block; /* Show menu icon */
+      cursor: pointer;
+  }
+
+  .menu-icon i {
+      font-size: 1.5em; /* Icon size */
+  }
+
+  nav ul {
+      flex-direction: column; /* Stack menu items vertically */
+      align-items: center; /* Center menu items */
+      display: none; /* Hide menu initially */
+      width: 100%; /* Full width */
+  }
+
+  nav ul li {
+      width: 100%; /* Full width list items */
+      text-align: center; /* Center text */
+  }
+
+  nav ul li a {
+      display: block; /* Block-level links */
+      padding: 10px; /* Add some padding */
+      width: 100%; /* Full width links */
+  }
+
+  header {
+      flex-direction: column; /* Stack logo and menu icon */
+  }
+}
+
+/* Ensure .menu-icon is only visible on mobile */
+.menu-icon {
+  display: none;
+}
 
 
 
